@@ -62,7 +62,7 @@ To run from docker:
 `docker build -t local:fs-api .`  
 `docker run -e ROOT_PATH='/' -v /path/locally/:/path/in/container -p 5500:5500 local:fs-api`  
 (Note that port 5500 is used because of conflicts with mac control center run running port 5000 on other than localhost)  
-`curl http://127.0.0.1:5500/tmp |jq .`
+`curl http://127.0.0.1:5500/ |jq .`
 
     {
       ".dockerenv": {
